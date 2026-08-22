@@ -24,9 +24,7 @@ class Solution:
                             break
 
                     return count
-
+                    
                 visited.add(current)
-                current = current.next
-
+                current=current.next
             return 0
-
