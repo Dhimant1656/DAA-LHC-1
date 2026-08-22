@@ -1,19 +1,21 @@
 class Solution:
     def firstOccurence(self, s, p):
-        for i in range(len(s)):
-    
-            j=0
-            while j<len(p):
 
-                if i+j>=len(s):
-                    break
+            for i in range(len(s)):
 
-                if s[i+j] != p[j]:
-                    break
+                j = 0
 
-                j+=1
+                while j < len(p):
 
-            if j == len(p):
-                return i
+                    if i + j >= len(s):
+                        break
 
-        return -1
+                    if s[i + j] != p[j]:
+                        break
+
+                    j += 1
+
+                if j == len(p):
+                    return i
+
+            return -1
